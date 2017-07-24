@@ -9,12 +9,19 @@
     "lint-fix": "eslint --fix src/"
   },
   "dependencies": {
+    "koa-router": "^7.2.1",
+    "lodash": "^4.17.4",
+    "swagger-parser": "^3.4.1",
     "think-cache-file": "~1.0.8",
     "think-model": "*",
     "think-session-file": "^1.0.5",
+    "think-swagger-controller": "0.0.3",
+    "think-swagger-parser": "0.0.3",
+    "think-swagger-router": "0.0.3",
     "think-view": "^1.0.0",
     "think-view-nunjucks": "^1.0.1",
-    "thinkjs": "next"
+    "thinkjs": "next",
+    "url-join": "^2.0.2"
   },
   "devDependencies": {
     "babel-preset-think-node": "^1.0.0",

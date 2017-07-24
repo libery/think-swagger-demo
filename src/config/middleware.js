@@ -1,4 +1,7 @@
 const path = require('path');
+const swaggerParser = require('think-swagger-parser');
+const swaggerRouter = require('think-swagger-router');
+const swaggerController = require('think-swagger-controller');
 const isDev = think.env === 'development';
 
 module.exports = [
@@ -29,9 +32,27 @@ module.exports = [
     options: {}
   },
   {
+    handle: swaggerParser,
+    options: {
+      debug: isDev
+    }
+  },
+  {
     handle: 'router',
     options: {}
   },
+  {
+    handle: swaggerRouter,
+    options: {
+      debug: isDev
+    }
+  },
   'logic',
-  'controller'
+  {
+    handle: swaggerController,
+    options: {
+      debug: isDev
+    }
+  }
+  // 'controller'
 ];
