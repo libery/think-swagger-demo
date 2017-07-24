@@ -1,13 +1,23 @@
 {
-  "name": "thinkjs-application",
-  "description": "application created by thinkjs",
+  "name": "think-swagger-demo",
+  "description": "thinkjs 3.0 integrate with swagger",
   "version": "1.0.0",
+  "author": {
+    "name": "liber",
+    "email": "liber_2000@163.com"
+  },
   "scripts": {
     "start": "node development.js",
     "compile": "babel src/ --presets think-node --out-dir app/",
     "lint": "eslint src/",
     "lint-fix": "eslint --fix src/"
   },
+  "contributors": [
+    {
+      "name": "liber",
+      "email": "liber_2000@163.com"
+    }
+  ],
   "dependencies": {
     "koa-router": "^7.2.1",
     "lodash": "^4.17.4",
@@ -34,8 +44,15 @@
   },
   "repository": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/libery/think-swagger-demo"
+  },
   "engines": {
     "node": ">=6.0.0"
   },
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/libery/think-swagger-demo/issues"
+  }
 }
