@@ -211,7 +211,7 @@ definitions:
         format: date
 
   User:
-    title: 人
+    title: user
     type: object
     required:
       - name

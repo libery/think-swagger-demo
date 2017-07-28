@@ -34,7 +34,9 @@ module.exports = [
   {
     handle: swaggerParser,
     options: {
-      debug: isDev
+      debug: isDev,
+      api_doc: './api/swagger.yaml',
+      controller_dir: './app/controller'
     }
   },
   {
